@@ -16,7 +16,8 @@ the same.
 
 ```bash
 npm install @hermoso/compat        # Node 18.17+
-pip install hermoso-compat         # Python 3.9+, no dependencies
+pip install hermoso-compat         # Python 3.10+, no dependencies
+# until the PyPI release is up:  pip install "git+https://github.com/hermoso-ai/hermoso-compat#subdirectory=python"
 ```
 
 Get a Hermoso API key at [app.hermoso.ai](https://app.hermoso.ai) (the **API, MCP & CLI** tab) and connect your

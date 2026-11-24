@@ -9,7 +9,7 @@ description = "Unofficial drop-in compatibility layers for the Ayrshare and Zern
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "Hermoso", email = "hello@hermoso.ai" }]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 dependencies = []
 keywords = ["hermoso", "social media api", "ayrshare alternative", "zernio alternative", "drop-in replacement", "schedule posts", "instagram", "tiktok", "linkedin"]
 classifiers = [

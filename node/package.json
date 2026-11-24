@@ -1,0 +1,30 @@
+{
+  "name": "@hermoso/compat",
+  "version": "0.1.0",
+  "description": "Unofficial drop-in compatibility layers for the Ayrshare, Zernio and Postiz SDKs that run on Hermoso's API. Change one import, keep your code. Not affiliated with Ayrshare, Zernio or Postiz.",
+  "license": "MIT",
+  "author": "Hermoso <hello@hermoso.ai> (https://hermoso.ai)",
+  "homepage": "https://hermoso.ai/docs/sdks/",
+  "repository": { "type": "git", "url": "git+https://github.com/hermoso-ai/hermoso-compat.git", "directory": "node" },
+  "bugs": { "url": "https://github.com/hermoso-ai/hermoso-compat/issues" },
+  "keywords": ["hermoso", "social media api", "ayrshare alternative", "zernio alternative", "postiz alternative", "social-media-api", "drop-in replacement", "migration", "schedule posts", "instagram", "tiktok", "linkedin", "youtube"],
+  "type": "module",
+  "engines": { "node": ">=18.17" },
+  "main": "./dist/index.cjs",
+  "module": "./src/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": { "types": "./types/index.d.ts", "import": "./src/index.js", "require": "./dist/index.cjs" },
+    "./ayrshare": { "types": "./types/ayrshare.d.ts", "import": "./src/ayrshare.js", "require": "./dist/ayrshare.cjs" },
+    "./zernio": { "types": "./types/zernio.d.ts", "import": "./src/zernio.js", "require": "./dist/zernio.cjs" },
+    "./postiz": { "types": "./types/postiz.d.ts", "import": "./src/postiz.js", "require": "./dist/postiz.cjs" },
+    "./package.json": "./package.json"
+  },
+  "files": ["src", "dist", "types", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test test/compat.test.mjs",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "devDependencies": { "esbuild": "0.24.2" }
+}

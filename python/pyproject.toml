@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hermoso-compat"
+version = "0.1.0"
+description = "Unofficial drop-in compatibility layers for the Ayrshare and Zernio Python SDKs that run on Hermoso's API. Change one import, keep your code. Not affiliated with Ayrshare or Zernio."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Hermoso", email = "hello@hermoso.ai" }]
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["hermoso", "social media api", "ayrshare alternative", "zernio alternative", "drop-in replacement", "schedule posts", "instagram", "tiktok", "linkedin"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+  "Topic :: Internet",
+]
+
+[project.urls]
+Homepage = "https://hermoso.ai/docs/sdks/"
+Source = "https://github.com/hermoso-ai/hermoso-compat"
+Issues = "https://github.com/hermoso-ai/hermoso-compat/issues"
+
+[tool.setuptools]
+packages = ["hermoso_compat"]
